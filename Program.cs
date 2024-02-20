@@ -75,7 +75,17 @@ static void handleResponseMusic(string response)
     //LinqFilter.FilterAllGenreInMusics(musics);    
     //LinqOrder.ShowArtistsOrdered(musics);
     //LinqFilter.FilterArtistsByGenre(musics, "rock");
-    LinqFilter.FilterMusicsByArtist(musics, "Michel Teló");
+    //LinqFilter.FilterMusicsByArtist(musics, "Michel Teló");
+
+    var playlist = new Playlist("Chilling");
+    playlist.AddMusic(musics[1]);
+    playlist.AddMusic(musics[2]);
+    playlist.AddMusic(musics[500]);
+    playlist.AddMusic(musics[358]);
+    playlist.AddMusic(musics[200]);
+    playlist.AddMusic(musics[10]);
+
+    playlist.GenerateJSON();
 }
 
 static void handleResponseMovies(string response)

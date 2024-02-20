@@ -27,4 +27,14 @@ internal class LinqFilter
         Console.WriteLine($"Filtrando músicas pelo artista: {artistName}");
         artistsMusics.ForEach(music => Console.WriteLine($"- {music.Name}"));
     }
+
+    public static void FilterMusicsByCSharp(List<Music> musics)
+    {
+        List<string?> musicsFiltered = musics
+                    .Where(music => music.Tonality.Equals("C#"))
+                    .Select(music => music.Name)
+                    .ToList(); ;
+        Console.WriteLine("Músicas em C#: ");
+        musicsFiltered.ForEach(music => Console.WriteLine($"- {music}"));
+    }
 }
