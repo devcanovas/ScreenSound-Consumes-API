@@ -1,4 +1,5 @@
-﻿using ScreenSound_Consumes_API.Models;
+﻿using ScreenSound_Consumes_API.Filters;
+using ScreenSound_Consumes_API.Models;
 using System.Text.Json;
 
 HttpClient client = new();
@@ -71,8 +72,10 @@ void handleResponseCountries(string response)
 static void handleResponseMusic(string response)
 {
     List<Music> musics = JsonSerializer.Deserialize<List<Music>>(response)!;
-    musics?.ForEach(music => music.ShowMusicDetails());
-    Console.WriteLine(musics?.Count);
+    //LinqFilter.FilterAllGenreInMusics(musics);    
+    //LinqOrder.ShowArtistsOrdered(musics);
+    //LinqFilter.FilterArtistsByGenre(musics, "rock");
+    LinqFilter.FilterMusicsByArtist(musics, "Michel Teló");
 }
 
 static void handleResponseMovies(string response)
@@ -86,3 +89,5 @@ void handleException(Exception e)
 {
     Console.WriteLine($"Ops! houve um problema inesperado: {e.Message}");
 }
+
+await RequestMusicsAsync();
