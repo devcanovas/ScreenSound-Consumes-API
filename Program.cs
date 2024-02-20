@@ -1,35 +1,70 @@
 ﻿using ScreenSound_Consumes_API.Models;
+using System.Net;
 using System.Text.Json;
 
 HttpClient client = new();
-async Task RequestMusicAsync()
+async Task RequestMusicsAsync()
 {
     try
     {
         string response = await client.GetStringAsync("https://guilhermeonrails.github.io/api-csharp-songs/songs.json");
-        List<Music> musics = JsonSerializer.Deserialize<List<Music>>(response)!;
-        musics?.ForEach(music => music.ShowMusicDetails());
-        Console.WriteLine(musics?.Count);
+        handleResponseMusic(response);
     }
-    catch (Exception ex)
+    catch (Exception e)
     {
-        Console.WriteLine($"Temos um problema! {ex.Message}");
+        handleException(e);
     }
 }
 
-async Task RequestMovieAsync()
+async Task RequestMoviesAsync()
 {
     try
     {
         string response = await client.GetStringAsync("https://raw.githubusercontent.com/ArthurOcFernandes/Exerc-cios-C-/curso-4-aula-2/Jsons/TopMovies.json");
-        List<Movie> movies = JsonSerializer.Deserialize<List<Movie>>(response)!;
-        movies?.ForEach(movie => movie.ShowMovieDetails());
-        Console.WriteLine(movies?.Count);
+        handleResponseMovies(response);
     }
-    catch(Exception e)
+    catch (Exception e)
     {
-        Console.WriteLine($"Ops! tivemos um problema {e.Message}");
+        handleException(e);
     }
 }
 
-await RequestMovieAsync();
+async Task RequestCountriesAsync()
+{
+    try
+    {
+        string response = await client.GetStringAsync("https://raw.githubusercontent.com/ArthurOcFernandes/Exerc-cios-C-/curso-4-aula-2/Jsons/Paises.json");
+        handleResponseCountries(response);
+    }
+    catch (Exception e)
+    {
+        handleException(e);
+    }
+}
+
+
+
+void handleResponseCountries(string response)
+{
+    List<Country> countries = JsonSerializer.Deserialize<List<Country>>(response)!;
+    countries?.ForEach(country => country.ShowCountryDetails());
+    Console.WriteLine(countries?.Count);
+}
+void handleException(Exception e)
+{
+    Console.WriteLine($"Ops! houve um problema inesperado: {e.Message}");
+}
+
+static void handleResponseMusic(string response)
+{
+    List<Music> musics = JsonSerializer.Deserialize<List<Music>>(response)!;
+    musics?.ForEach(music => music.ShowMusicDetails());
+    Console.WriteLine(musics?.Count);
+}
+
+static void handleResponseMovies(string response)
+{
+    List<Movie> movies = JsonSerializer.Deserialize<List<Movie>>(response)!;
+    movies?.ForEach(movie => movie.ShowMovieDetails());
+    Console.WriteLine(movies?.Count);
+}
