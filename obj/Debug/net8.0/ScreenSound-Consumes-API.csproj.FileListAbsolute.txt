@@ -1,0 +1,14 @@
+D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\obj\Debug\net8.0\ScreenSound-Consumes-API.GeneratedMSBuildEditorConfig.editorconfig
+D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\obj\Debug\net8.0\ScreenSound-Consumes-API.AssemblyInfoInputs.cache
+D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\obj\Debug\net8.0\ScreenSound-Consumes-API.AssemblyInfo.cs
+D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\obj\Debug\net8.0\ScreenSound-Consumes-API.csproj.CoreCompileInputs.cache
+D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\bin\Debug\net8.0\ScreenSound-Consumes-API.exe
+D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\bin\Debug\net8.0\ScreenSound-Consumes-API.deps.json
+D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\bin\Debug\net8.0\ScreenSound-Consumes-API.runtimeconfig.json
+D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\bin\Debug\net8.0\ScreenSound-Consumes-API.dll
+D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\bin\Debug\net8.0\ScreenSound-Consumes-API.pdb
+D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\obj\Debug\net8.0\ScreenSound-Consumes-API.dll
+D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\obj\Debug\net8.0\refint\ScreenSound-Consumes-API.dll
+D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\obj\Debug\net8.0\ScreenSound-Consumes-API.pdb
+D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\obj\Debug\net8.0\ScreenSound-Consumes-API.genruntimeconfig.cache
+D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\obj\Debug\net8.0\ref\ScreenSound-Consumes-API.dll
