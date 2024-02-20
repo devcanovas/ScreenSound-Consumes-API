@@ -12,3 +12,4 @@ D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\obj\Debug\net8.0\
 D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\obj\Debug\net8.0\ScreenSound-Consumes-API.pdb
 D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\obj\Debug\net8.0\ScreenSound-Consumes-API.genruntimeconfig.cache
 D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\obj\Debug\net8.0\ref\ScreenSound-Consumes-API.dll
+D:\ss\csharp\ScreenSound-Consumes-API\ScreenSound-Consumes-API\obj\Debug\net8.0\ScreenSound-Consumes-API.sourcelink.json
